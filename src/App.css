@@ -1,0 +1,79 @@
+/* src/App.css */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #17a34a;
+}
+
+.song-list, .playlist {
+  flex: 1;
+}
+
+.song-list ul, .playlist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.song-list li, .playlist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.song-list button, .playlist button {
+  padding: 5px 10px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.song-list button:hover, .playlist button:hover {
+  background-color: #17a34a;
+}
+
+.playlist button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
